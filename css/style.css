@@ -1,0 +1,45 @@
+@charset "utf-8";
+a:any-link {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: afe9f9;
+}
+#wrap {
+    width: 1004px;
+    margin: 0 auto;
+}
+header {
+    background-color: #afe9f9;
+}
+header img {
+    margin: 0 auto;
+    padding: 30px 434px;
+}
+footer {
+    width: 1004px;
+    height: 110px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+h1{
+    float: left;
+    padding: 10px
+    
+}
+address {
+    font-style: normal;
+    float: left;
+    padding-top: 20px;
+    padding-left: 93px;
+    }
+
+small {
+    font-size: 100%;
+    float: left;
+    padding: 0 93px;
+    }
