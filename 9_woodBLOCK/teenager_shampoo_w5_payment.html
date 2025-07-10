@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W005 레몬그라스&amp;오렌지 샴푸바</title>
+    <link rel="stylesheet" href="css/header&footer_modal.css">
+    <link rel="stylesheet" href="css/teenager_shampoo_w5_payment.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="wrap">
+        <header id="header"></header>
+        <div class="wrapper">
+            <div class="content">
+                <!-- 왼쪽: 썸네일 + 메인 이미지 -->
+                <div class="image-group">
+                    <div class="thumbnails">
+                        <img src="img/teenager_shampoo_w005.webp" onclick="changeMainImage('img/teenager_shampoo_w005.webp')">
+                        <img src="img/teenager_shampoo_w00501.webp" onclick="changeMainImage('img/teenager_shampoo_w00501.webp')">
+                        <img src="img/teenager_shampoo_w00502.webp" onclick="changeMainImage('img/teenager_shampoo_w00502.webp')">
+                        
+                    </div>
+                    <div class="main-image-container">
+                        <img src="img/teenager_shampoo_w005.webp" id="mainImage" class="main-image" />
+                        <div class="image-description-box">민감타입 추천 (민감/진정)</div>
+                    </div>
+
+                </div>
+
+                <!-- 오른쪽: 상품 정보 -->
+                <div class="info">
+                    <h2>W005 레몬그라스&amp;오렌지 샴푸바</h2>
+                    <p class="price">11,000원</p>
+                    <div class="product-line">
+                        <div class="line-top">
+                            <span class="product-name">W005 레몬그라스&amp;오렌지 샴푸바</span>
+                        </div>
+                        <div class="line-bottom">
+                            <div class="quantity-box">
+                                <button class="qty-btn" onclick="changeQty(-1)">-</button>
+                                <span id="quantity">1</span>
+                                <button class="qty-btn" onclick="changeQty(1)">+</button>
+                            </div>
+                            <span id="unit-price">11,000원</span>
+                        </div>
+                    </div>
+                    <div class="total-line">
+                        <span>총액 (개수)</span>
+                        <span id="total-price"><span>11,000원 (1)</span>
+                        </span>
+                    </div>
+
+                    <div class="toggle-box" onclick="toggleText('subscribe')">
+                        <div class="toggle-header">
+                            <span>구독 혜택</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div id="subscribe" class="toggle-content">지금 구독하면 20% 할인 혜택 드려요</div>
+                    </div>
+
+                    <div class="toggle-box" onclick="toggleText('promo')">
+                        <div class="toggle-header">
+                            <span>프로모션 상품 행사</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div id="promo" class="toggle-content">1개, 3개(10%), 5개+1개(17%)</div>
+                    </div>
+
+                    <button class="cart-btn">장바구니</button>
+                    <div class="pay-group">
+                        <button class="pay-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="24" fill="#FEE500" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C17.3726 12 12 16.134 12 21.111c0 2.936 2.026 5.536 5.078 7.162l-1.297 4.687a0.5 0.5 0 0 0 .737.554l5.438-3.093a16.812 16.812 0 0 0 2.044.128c6.6274 0 12-4.134 12-9.111C36 16.134 30.6274 12 24 12Z" fill="black" />
+                            </svg>
+                            <span>Pay</span>
+                        </button>
+                        <button class="npay-btn"><strong>N</strong> Pay</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slogan">
+                <p>“우드블럭 비누는 친환경 포장으로 전달됩니다.”</p>
+                <div class="slogan-images">
+                    <img src="img/love.jpg" />
+                    <img src="img/pkg.jpg" />
+                    <img src="img/eco.jpg" />
+                </div>
+            </div>
+            <div class="line-with-text">
+                <span>WHAT IS IT</span>
+            </div>
+            <div class="detail">
+                <img src="img/tShampoo.jpg" alt="우드블럭 청소년 비누 제품 소개">
+            </div>
+        </div>
+        <footer id="footer"></footer>
+    </main>
+    <script src="js/payment.js">
+    </script>
+    <script src="js/innerHTML.js"></script>
+    <script src="js/modal.js"></script>
+</body></html>

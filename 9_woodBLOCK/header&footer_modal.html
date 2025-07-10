@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WoodBLOCK</title>
+    <link rel="stylesheet" href="css/header&footer_modal.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="wrap">
+        <nav id="skipnav" class="hidden">
+            <h3>영역별 바로 가기</h3>
+            <ul>
+                <li><a href="#">브랜드 스토리 바로가기</a></li>
+                <li><a href="#">숍 바로가기</a></li>
+                <li><a href="#">커뮤니티 바로가기</a></li>
+                <li><a href="#">마이페이지 바로가기</a></li>
+                <li><a href="#">메인베너 바로가기</a></li>
+                <li><a href="#"> 바로가기</a></li>
+                <li><a href="#"> 바로가기</a></li>
+                <li><a href="#">베스트 바로가기</a></li>
+                <li><a href="#">기업정보 메뉴 바로가기</a></li>
+                <li><a href="#address">주소정보 바로가기</a></li>
+            </ul>
+        </nav>
+        <!-- HEADER -->
+        <header id="header">
+            <div id="header_top">
+                <div class="event_toogle">
+                    <!-- 마이페이지 버튼 -->
+                    <div class="toggle" data-target="#modal-coupon"><a href="#">공식몰 가입하고 쿠폰 받으러 가기</a></div>
+                    <!-- 마이페이지 모달 -->
+                    <div class="modal" id="modal-coupon">
+                        <div class="modal-content">
+                            <iframe src="sign_in.html" width="1024" height="800" style="border: none;"></iframe>
+                        </div>
+                        <div class="close"><span></span><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="header_lnb">
+                <div id="left_lnb">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.jpg" alt="WOODBLOCK"></a>
+                    </div>
+                    <nav id="lnb">
+                        <h3 class="hidden">주 메뉴</h3>
+                        <ul class="menu" style="text-align: center;">
+                            <li><a href="brand_story.html">BRAND</a>
+                                <ul class="sub">
+                                    <li><a href="brand_story.html">Brand Story</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="adult.html">SHOP</a>
+                                <ul class="sub">
+                                    <li><a href="adult.html">Adult</a></li>
+                                    <li><a href="teenager.html">Teenager</a></li>
+                                    <li><a href="pet.html">Pet</a></li>
+                                    <li><a href="kitchen.html">Kitchen</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="notice.html">COMMUNITY</a>
+                                <ul class="sub">
+                                    <li><a href="notice.html">Notice</a></li>
+                                    <li><a href="event.html">Event</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right_lnb">
+                    <ul class="modal_toogle">
+                        <!-- 마이페이지 버튼 -->
+                        <li class="toggle" data-target="#modal-mypage">
+                            <a href="#"><img src="img/mypage.svg" alt="mypage"></a>
+                        </li>
+                        <!-- 마이페이지 모달 -->
+                        <div class="modal" id="modal-mypage">
+                            <div class="modal-content">
+                                <iframe src="sign_in.html" width="1024" height="800" style="border: none;"></iframe>
+                            </div>
+                            <div class="close"><span></span><span></span></div>
+                        </div>
+                        <!-- 카트페이지 버튼 -->
+                        <li class="toggle" data-target="#modal-cart">
+                            <a href="#"><img src="img/cart.svg" alt="cart"></a>
+                        </li>
+                        <!-- 카트페이지 모달 -->
+                        <div class="modal" id="modal-cart">
+                            <div class="modal-content">
+                                <iframe src="cart.html" width="1024" height="800" style="border: none;"></iframe>
+                            </div>
+                            <div class="close"><span></span><span></span></div>
+                        </div>
+                        <!-- 서치페이지 버튼 -->
+                        <li class="toggle" data-target="#modal-search">
+                            <a href="#"><img src="img/search.svg" alt="search"></a>
+                        </li>
+                        <!-- 서치페이지 모달 -->
+                        <div class="modal" id="modal-search">
+                            <div class="modal-content">
+                                <iframe src="search.html" width="1024" height="800" style="border: none;"></iframe>
+                            </div>
+                            <div class="close"><span></span><span></span></div>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <main id="contents">
+
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div id="fnb">
+                <div id="notice">
+                    <ul>
+                        <li>주문 | 취소 | 배송문의 | 제품상담 </li>
+                        <li><a href="#">고객센터 1644-4453</a></li>
+                        <li>월-금 10:00~17:00 (점심 12:00~13:00) </li>
+                        <li>주말 및 공휴일 휴무</li>
+                        <li><a href="faq.html">Q&amp;A 바로가기</a></li>
+                        <li><a href="#">이용약관 | 개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <address>
+                    <ul>
+                        <a href=""><img src="img/main_logo.png"></a>
+                        <li>우드블럭 | 대표: 엄혜용 | 사업자 등록번호: <a href="#">636-81-01748</a></li>
+                        <li>주소: 전북특별자치도 전주시 완산구 오목대길 57, 1층 </li>
+                        <li>통신판매업신고: 2020-전주완산-1074 | 개인정보관리책임자: 엄혜용</li>
+                        <li> </li>
+                        <li>COPYRIGHT &copy; WOODBLOCK. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </address>
+            </div>
+            <p><a id="fixed" href="#" alt="top"><img src="img/scrollToTop.svg" alt=""></a></p>
+        </footer>
+    </main>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
