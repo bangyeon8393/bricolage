@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>빙그레</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="wrap">
+    <header>
+        <nav id="nav">
+            <ul id="lnb">
+                <li><a href="#introduce_wrap">회사소개</a></li>
+                <li><a href="#product_wrap">제품소개</a></li>
+                <li><a href="#esg_wrap">ESG</a></li>
+                <li><a href="#news_wrap">뉴스룸</a></li>
+                <li><a href="">고객센터</a></li>
+            </ul>
+            <div id="nav-fill"></div>
+            <a href="#index_wrap" id="logo"><img src="img/logo.svg" alt="네비게이션 바 로고"></a>
+            <div class="ham">
+                <span class="ham-one"></span>
+                <span class="ham-two"></span>
+                <span class="ham-three"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="wrap notHidden" id="index_wrap">
+    <section>
+        <div id="video">
+            <ul class="video">
+                <li><video src="vid/vid-0.mp4" autoplay muted loop playsinline></video></li>
+                <li><video src="vid/vid-1.mp4" autoplay muted loop playsinline></video></li>
+                <li><video src="vid/vid-2.mp4" autoplay muted loop playsinline></video></li>
+            </ul>
+            <button class="btn_arrow video_btn_right"></button>
+            <button class="btn_arrow prev video_btn_left"></button><!--뚫린 꺽쇄를 원하기에 풀이미지에 오퍼시티-->
+            <div class="dial"></div>
+            <div class="pause"></div>
+        </div>
+    </section>
+    <section id="index">
+        <article>
+            <h5>빙그레의 따스한 추억</h5>
+            <div class="index_slide">
+            <ul>
+                <li class="act"><div class="polaroid"><div class="index_img one"></div></div><div class="index_text"><h6>빙그레는 옛날 옛적부터...</h6><p>빙그레 웃던 그날, 여전히 마음 한켠에 머물러요. 우리 함께 웃던 순간이 여전히 선명해요.</p></div></li>
+                <li><div class="polaroid"><div class="index_img two"></div></div><div class="index_text"><h6>한 입에 퍼지는 어릴 적 기억</h6><p>메로나 하나에 웃음이 피던 여름, 다시 만나고 싶은 순간
+엄마 손잡고 사먹던 바나나우유, 그 맛은 추억이에요</p></div></li>
+                <li><div class="polaroid"><div class="index_img three"></div></div><div class="index_text"><h6>동네 구멍가게 앞, 작은 행복</h6><p>동전 두 개로 사 먹던 즐거움, 지금도 마음 한구석을 채워줘요.</p></div></li>
+            </ul>
+            <button class="btn_arrow prev index_slide_btn_left"></button>
+            <button class="btn_arrow index_slide_btn_right"></button>
+            </div>
+        </article>
+        <article>
+            <div class="index_slide two">
+            <ul>
+                <li class="act"><div class="polaroid"><div class="index_img four"></div></div><div class="index_text"><h6>아무 걱정 없던 그때, 웃음도 바람도 달콤했죠</h6><p>아빠 자전거 뒤에 타고 가던 그 여름, 바람도 웃고 있었지.</p></div></li>
+                <li><div class="polaroid"><div class="index_img five"></div></div><div class="index_text"><h6>빙그레 웃던 그 순간</h6><p>빙그레 웃는 너를 보며, 나는 늘 그날을 떠올려. 노란 바나나우유처럼 익숙했던 그 시절.</p></div></li>
+                <li><div class="polaroid"><div class="index_img six"></div></div><div class="index_text"><h6>90년대 골목 어귀, 자판기 앞에서 친구들과 나눈 추억</h6><p>옛날 텔레비전, 만화 끝나면 먹던 아이스크림 한 입이 그리워요.</p></div></li>
+            </ul>
+            <button class="btn_arrow prev index_slide_btn_left"></button>
+            <button class="btn_arrow index_slide_btn_right"></button>
+            </div>
+        </article>
+        
+        <article class="index_imgbox">
+            <div class="inner">
+                <div class="upper"><div>
+                <div class="polaroid-vertical"><div class="index_img seven"></div></div></div><div class="index_text"><h6>기억은 바나나우유처럼</h6><p>한 입 머금는 순간, 어릴 적 햇살 아래 자전거 타던 오후가 떠오릅니다. 노란빛 달콤함 속에 수많은 추억이 차곡차곡 담겨 있어요. 그 시절 우리의 이야기, 지금도 바나나우유 한 모금에 살아나죠.</p></div>
+                </div>
+                <div class="under">
+                <div class="polaroid"><div class="index_img eight"></div></div><div class="index_text"><h6>빙그레, 그 이름만으로도 마음에 미소가</h6><p>기억 저편, 달달한 맛으로 이어지는 우리의 이야기.</p></div>
+                </div>
+            </div>
+        </article>
+        
+        <article>
+            <h5>빙그레의 대표적인 제품들</h5>
+            <div class="inner">
+                <div class="index_product">
+                    <div>
+                        <a href="#product-steady-banana_wrap" class="thumb"></a>
+                        <a href="#product-steady-banana_wrap" class="pdt_name">바나나맛 우유</a>
+                    </div>
+                    <div>
+                        <a href="#product-steady-melon_wrap" class="thumb two"></a>
+                        <a href="#product-steady-melon_wrap" class="pdt_name">메로나</a>
+                    </div>
+                    <div>
+                        <a href="#product-steady-vanila_wrap" class="thumb three"></a>
+                        <a href="#product-steady-vanila_wrap" class="pdt_name">투게더</a>
+                    </div>
+                    <div>
+                        <a href="#product-steady-yogurt_wrap" class="thumb four"></a>
+                        <a href="#product-steady-yogurt_wrap" class="pdt_name">요플레</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    </div>
+    
+    
+    
+    
+    <div class="wrap" id="news_wrap">
+    <section class="title">
+        <h5>뉴스룸</h5>
+    </section>
+    <section id="news">
+        <article class="news-1 margin-none">
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>국민음료 바나나맛우유에 이제 전세계가 반하나?</h6>
+                    <p>2024-02-01</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>‘두 유 노 메로나?’ 메로나 월클(world-class) 맞습니다!</h6>
+                    <p>2023-10-30</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[빵또아 30주년] 올 때 메로나? 갈 땐 빵또아(와)!</h6>
+                    <p>2023-09-26</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>더:단백 인기 비결, 그것이 알고 싶다!</h6>
+                    <p>2023-08-14</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[요플레 40주년 특집] 요플레디오: 요플레와 함께한 시간들</h6>
+                    <p>2023-07-28</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[요플레 40주년 특집] 요플레의 다양한 변신, 이 제품도 요플레였어?</h6>
+                    <p>2023-07-14</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[요플레 40주년 특집] 한국사람들은 왜 요거트를 요플레라고 부를까?</h6>
+                    <p>2023-06-30</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[이벤트] [2022 빙그레 어워즈] 인기상을 수상할 주인공은?</h6>
+                    <p>2022-12-14</p>
+                </div>
+            </div>
+            <div class="news-comp-1">
+                <div class="img"></div>
+                <div class="text">
+                    <h6>[B급 비밀] 10.1프로, 별립법 반죽? 빙그레 디저트 브랜드 D.D.D</h6>
+                    <p>2022-12-09</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<!--
+    <div class="wrap" id="introduce_wrap">
+    <section class="title">
+        <h5>회사소개</h5>
+    </section>
+    <section id="introduce">
+        <article class="margin-double introduce-1">
+            <div class="introduce-comp-1 grid-col-span-two">
+                <a href="" class="label">
+                    <img src="img/logo.svg" alt="빙그레 텍스트 사진" class="label_img">
+                    <h6>언제나 새로운 맛과 행복을 선사합니다.</h6>
+                </a>
+                <div class="img"></div>
+            </div>
+            <div class="introduce-comp-2">
+                <a href="" class="label">
+                    <h6>CEO 인사말</h6>
+                </a>
+                <a href="">빙그레는 자율과 책임이 조화를 이루는 스마트한 기업 문화를 조성하고 비즈니스 파트너와 함께 가치를 공유하는 기업으로 발전해 나가며 고객으로부터 지속적인 사랑과 신뢰를 받을 수 있도록 노력하겠습니다.</a>
+            </div>
+            <div class="introduce-comp-2">
+                <a href="" class="label">
+                    <h6>CEO 경영이념</h6>
+                </a>
+                <a href="">빙그레는 국민의 건강과 행복을 위해 
+최상의 고객 가치를 만듭니다.</a>
+            </div>
+            <div class="introduce-comp-2">
+                <a href="" class="label">
+                    <h6>사업분야</h6>
+                </a>
+                <a href="">빙그레는 안정적인 공급과 안전한 제품 
+생산을 위해 최선을 다합니다.</a>
+            </div>
+            <div class="introduce-comp-2">
+                <a href="" class="label">
+                    <h6>히스토리</h6>
+                </a>
+                <a href="">국민의 건강과 행복을 만들어
+온 빙그레의 지난 순간들을 소개합니다.</a>
+            </div>
+            <div class="introduce-comp-2">
+                <a href="" class="label">
+                    <h6>오시는길</h6>
+                </a>
+                <a href="">빙그레 본사와 영업지점 위치를 확인
+해보세요.</a>
+            </div>
+        </article>
+    </section>
+    </div>
+-->
+    <div class="wrap" id="introduce_wrap">
+    <section class="title">
+        <h5>회사소개</h5>
+    </section>
+    <section id="esg">
+        <article class="margin-double esg-1">
+            <div class="esg-comp-1">
+                <h6 class="copy">빙그레는 언제나 새로운 맛과 행복을 선사합니다.</h6>
+                <div class="img"></div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">CEO 인사말</h6>
+                <div class="text">
+                    <p>빙그레는 자율과 책임이 조화를 이루는 
+스마트한 기업 문화를 조성하고 비즈니스 파트너와 함께 가치를 공유하는 기업으로 발전해 나가며 고객으로부터 지속적인 사랑과 신뢰를 받을 수 있도록 노력하겠습니다</p>
+                <div class="btn_show_more"><a href="#introduce-ceo_wrap">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">CEO 경영이념</h6>
+                <div class="text">
+                    <p>빙그레는 자율과 책임이 조화를 이루는 스마트한 기업문화 조성을 통해 즐거움과 보람이 가득한 회사, 비즈니스 파트너와 함께 가치를 만들고 공유하는 기업, 최상의 고객가치를 창조하고, 공동체의 발전에 앞장서는 공유가치 실현을 위해 최선을 다하고자 합니다.</p>
+                <div class="btn_show_more"><a href="#introduce-ideology_wrap">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">사업분야</h6>
+                <div class="text">
+                    <p>빙그레는 안정적인 공급과 안전한 제품 생산을 위해 최선을 다합니다.</p>
+                <div class="btn_show_more"><a href="#introduce-business_wrap">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">히스토리</h6>
+                <div class="text">
+                    <p>국민의 건강과 행복을 만들어
+온 빙그레의 지난 순간들을 소개합니다.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">오시는길</h6>
+                <div class="text">
+                    <p>빙그레 본사와 영업지점 위치를 확인
+해보세요.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="wrap" id="esg_wrap">
+    <section class="title">
+        <h5>지속가능경영</h5>
+    </section>
+    <section id="esg">
+        <article class="margin-double esg-1">
+            <div class="esg-comp-1">
+                <h6 class="copy">빙그레는 언제나 새로운 맛과 행복을 선사합니다.</h6>
+                <div class="img"><a href="#esg-manage_wrap"></a></div>
+                <div class="text">
+                    <p>지속가능경영 체계
+빙그레는 '전 임직원이 일상적으로 자연스럽게 실천하는 지속가능경영’이라는 ESG 경영 비전을 수립하였습니다. </p>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">ECO-FRIENDLY</h6>
+                <div class="text">
+                    <p>빙그레는 친환경 기업으로 나아가기 위해 전사적인 노력을 기울이고 있습니다. 
+앞으로도, 진심을 다해 환경을 보호하고 소비자에게 신뢰와 사랑을 받는 기업이 되기 위해 끊임없이 노력하겠습니다.</p>
+                <div class="btn_show_more"><a href="#esg-eco_wrap">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">Shared Value</h6>
+                <div class="text">
+                    <p>빙그레는 자율과 책임이 조화를 이루는 스마트한 기업문화 조성을 통해 즐거움과 보람이 가득한 회사, 비즈니스 파트너와 함께 가치를 만들고 공유하는 기업, 최상의 고객가치를 창조하고, 공동체의 발전에 앞장서는 공유가치 실현을 위해 최선을 다하고자 합니다.</p>
+                <div class="btn_show_more"><a href="#esg-share_wrap">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">Global Integrity</h6>
+                <div class="text">
+                    <p>빙그레는 투명하고 안정적인 지배구조 구축을 통해 글로벌 수준의 지배구조 실현을 위해 최선을 다하고 있습니다.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">윤리준법 경영</h6>
+                <div class="text">
+                    <p>윤리와 도덕’을 지향하는 기업으로서, 공정하고 투명한 경쟁을 지향하는 자유경쟁 시장의 질서를 존중하며,  제반 법규정과 법의 정신을 준수하는 기업활동을 추구한다.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">사회공헌</h6>
+                <div class="text">
+                    <p>같이 나누는 행복, 가치 있는 삶, 밝은 미소의 메신저 빙그레.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+            <div class="esg-comp-2">
+                <h6 class="copy">보고서 및 정책</h6>
+                <div class="text">
+                    <p>빙그레의 지속가능보고서 및 
+정책, 규범 등을 다운받으실 수 있습니다.</p>
+                <div class="btn_show_more"><a href="">더 보기</a></div>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+    </div>
+    
+    
+    <div class="wrap" id="product_wrap">
+    <section id="product-scroll" class="act0">
+        <h5>그 시절, 그 맛 그대로</h5>
+        <article class="product-1">
+            <div class="product-comp-1 one">
+                <div class="img"><a href="#product-steady-banana_wrap"></a></div>
+                <div class="text">
+                    <h6>바나나맛 우유</h6>
+                    <div class="line"></div>
+                    <p>‘항아리’병 하나에 담긴 내 어린 시절</p>
+                </div>
+            </div>
+            <div class="product-comp-1 two">
+                <div class="img"><a href="#product-steady-vanila_wrap"></a></div>
+                <div class="text">
+                    <h6>투게더</h6>
+                    <div class="line"></div>
+                    <p>가족이 모이면 늘~ ‘투게더’였지</p>
+                </div>
+            </div>
+            <div class="product-comp-1 three">
+                <div class="img"><a href="#product-steady-yogurt_wrap"></a></div>
+                <div class="text">
+                    <h6>요플레</h6>
+                    <div class="line"></div>
+                    <p>뚜껑에 붙은 걸 먼저 ‘핥아먹던’ 그 시절</p>
+                </div>
+            </div>
+            <div class="product-comp-1 four">
+                <div class="img"><a href="#product-steady-melon_wrap"></a></div>
+                <div class="text">
+                    <h6>메로나</h6>
+                    <div class="line"></div>
+                    <p>초록 막대 하나면 세상이 달콤했지</p>
+                </div>
+            </div>
+        </article>
+        <span class="scrollPrev"></span>
+        <span class="scrollNext"></span>
+    </section>
+    <section class="title">
+        <h5>제품소개</h5>
+    </section>
+    <section id="product">
+        <div class="inner-double">
+            <div class="product_category">
+                    <div>
+                        <a href="#product-icecream_wrap" class="thumb"></a>
+                        <a href="#product-icecream_wrap" class="pdt_name">아이스크림</a>
+                    </div>
+                    <div>
+                        <a href="#product-milk_wrap" class="thumb two"></a>
+                        <a href="#product-milk_wrap" class="pdt_name">우유/치즈</a>
+                    </div>
+                    <div>
+                        <a href="#product-yogurt_wrap" class="thumb three"></a>
+                        <a href="#product-yogurt_wrap" class="pdt_name">발효유</a>
+                    </div>
+                    <div>
+                        <a href="#product-coffee_wrap" class="thumb four"></a>
+                        <a href="#product-coffee_wrap" class="pdt_name">커피</a>
+                    </div>
+                    <div>
+                        <a href="#product-juice_wrap" class="thumb five"></a>
+                        <a href="#product-juice_wrap" class="pdt_name">주스</a>
+                    </div>
+                    <div>
+                        <a href="#product-drink_wrap" class="thumb six"></a>
+                        <a href="#product-drink_wrap" class="pdt_name">음료</a>
+                    </div>
+                    <div>
+                        <a href="#product-snack_wrap" class="thumb seven"></a>
+                        <a href="#product-snack_wrap" class="pdt_name">스낵/디저트</a>
+                    </div>
+                    <div>
+                        <a href="#product-health_wrap" class="thumb eight"></a>
+                        <a href="#product-health_wrap" class="pdt_name">건강지향</a>
+                    </div>
+                    <div>
+                        <a href="#product-export_wrap" class="thumb nine"></a>
+                        <a href="#product-export_wrap" class="pdt_name">수출제품</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+    </div>
+    
+    
+    <div class="wrap" id="esg-eco_wrap">
+        <section class="capture">
+            <div class="esg-eco"></div>
+        </section>
+    </div>
+    <div class="wrap" id="esg-manage_wrap">
+        <section class="capture">
+            <div class="esg-manage"></div>
+        </section>
+    </div>
+    <div class="wrap" id="esg-share_wrap">
+        <section class="capture">
+            <div class="esg-share"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-steady-banana_wrap">
+        <section class="capture">
+            <div class="product-steady-banana"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-steady-vanila_wrap">
+        <section class="capture">
+            <div class="product-steady-vanila"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-steady-yogurt_wrap">
+        <section class="capture">
+            <div class="product-steady-yogurt"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-steady-melon_wrap">
+        <section class="capture">
+            <div class="product-steady-melon"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-juice_wrap">
+        <section class="capture">
+            <div class="product-juice"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-drink_wrap">
+        <section class="capture">
+            <div class="product-drink"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-coffee_wrap">
+        <section class="capture">
+            <div class="product-coffee"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-milk_wrap">
+        <section class="capture">
+            <div class="product-milk"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-yogurt_wrap">
+        <section class="capture">
+            <div class="product-yogurt"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-export_wrap">
+        <section class="capture">
+            <div class="product-export"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-icecream_wrap">
+        <section class="capture">
+            <div class="product-icecream"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-snack_wrap">
+        <section class="capture">
+            <div class="product-snack"></div>
+        </section>
+    </div>
+    <div class="wrap" id="product-health_wrap">
+        <section class="capture">
+            <div class="product-health"></div>
+        </section>
+    </div>
+    <div class="wrap" id="introduce-business_wrap">
+        <section class="capture">
+            <div class="introduce-business"></div>
+        </section>
+    </div>
+    <div class="wrap" id="introduce-ceo_wrap">
+        <section class="capture">
+            <div class="introduce-ceo"></div>
+        </section>
+    </div>
+    <div class="wrap" id="introduce-ideology_wrap">
+        <section class="capture">
+            <div class="introduce-ideology"></div>
+        </section>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="wrap" id="aa_wrap">
+        <section class="capture">
+            <div class="aa"></div>
+        </section>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer id="footer">
+        <img src="img/logo_footer.svg" alt="빙그레 푸터 로고" id="footer_logo">
+        <p>회사명: 빙그레</p>
+        <address>경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</address>
+    </footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
