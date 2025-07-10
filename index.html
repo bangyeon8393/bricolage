@@ -2,22 +2,262 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>위캔쿠키</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>포트폴리오 - FANG YAN</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to left top, #63b2e3, #7cc0e7, #95cfeb, #afdcf0, #c9eaf6, #c9eaf6, #c9eaf6, #c9eaf6, #afdcf0, #95cfeb, #7cc0e7, #63b2e3);
+            background-attachment: fixed;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #3498db;
+/*            background: linear-gradient(to right, #3498db, #e74c3c, #f1c40f);*/
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .projects-container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+/*            padding-left: 10px;*/
+/*            padding-bottom: 20px;*/
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        .project {
+
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            min-width: 350px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background: rgba(255,255,255,0.7);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #3498db;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background: #3498db;
+/*            background: linear-gradient(to right, #3498db, #e74c3c, #f1c40f);*/
+            border-radius: 3px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a:any-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.4);
+            transform: translateX(5px);
+        }
+
+        a::before {
+            content: "→";
+            margin-right: 10px;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* 가로 스크롤바 스타일링 */
+        ::-webkit-scrollbar {
+            height: 14px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+/*            background: linear-gradient(to right, #3498db, #e74c3c, #f1c40f);*/
+            background: #3498db;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #fff;
+            font-size: 0.9rem;
+            border-top: 2px solid #fff;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .project {
+                min-width: 300px;
+            }
+        }
+
+        /* 데코레이션 요소 */
+        .decoration {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.2) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .dec-1 {
+            top: 10%;
+            left: 5%;
+        }
+
+        .dec-2 {
+            bottom: 20%;
+            right: 5%;
+            background: radial-gradient(circle, rgba(231, 76, 60, 0.2) 0%, transparent 70%);
+        }
+    </style>
 </head>
 
 <body>
-    <div id="wrap">
-       <header>
-           <img src="image/logo.png">
-       </header>
-        <div id="contentwrap">
-            <img src="image/wecan_index_image.jpg">
-        </div>
+    <div class="decoration dec-1"></div>
+    <div class="decoration dec-2"></div>
+
+    <div class="container">
+        <header>
+            <h1>포트폴리오<br>FANG YAN(방연)</h1>
+        </header>
+
+        <main>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>ESG기업홍보</h3>
+                    <ul>
+                        <li><a href="9_woodBLOCK/index.html" target="_blank">우드블럭</a></li>
+                        <li><a href="9_woodBLOCK/project_WoodBLOCK.pdf" target="_blank">우드블럭 ESG기업홍보 기획안</a></li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>상세페이지 디자인</h3>
+                    <ul>
+                        <li><a href="5-_wecan/index.html" target="_blank">위캔쿠키</a></li>
+                        <li><a href="5-_wecan/project_wecan.pdf" target="_blank">위캔쿠키 상세페이지 기획안</a></li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>반응형웹</h3>
+                    <ul>
+                        <li><a href="8_binggrae/index.html" target="_blank">빙그레</a></li>
+                        <li><a href="8_binggrae/project_binggrae.pdf" target="_blank">빙그레 반응형웹 기획안</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </main>
+
         <footer>
-            <h1><img src="image/logo.png"></h1>
-            <address>위캔센터 대표 :신옥자 사업자등록번호 :<a href="">128-82-12076</a> 통신판매업신고번호 :2014-고양덕양구-0730호<br>대표전화 :<a href="">031-969-3533</a> FAX :031-969-3656 개인정보관리 책임자 :신옥자 <br>경기도 고양시 덕양구 혜음로 276 (위캔) 위캔센터</address>
-            <small>Copyright (c) wecanshop.co.kr all rights reserved.</small>
+            <p> 2025 FANG YAN Portfolio.</p>
+            <p>Contact: bangyeon@gmail.com</p>
         </footer>
     </div>
 </body></html>
