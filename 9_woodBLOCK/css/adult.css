@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: "나눔고딕OTF", sans-serif;
+    background-color: #fff;
+}
+
+/* 헤더 전체 너비 1920px (가운데 정렬 컨테이너는 별도 처리) */
+
+.hero img {
+    width: 1920px;
+    height: 400px;
+}
+
+.icons span {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* 배너 */
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    font-family: '나눔고딕OTF', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+
+.banner-text p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: black;
+    word-spacing: 12px;
+}
+
+
+/* 콘텐츠 영역 1024px */
+.product-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.content-1024 {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.product-section h2 {
+    font-size: 21px;
+    padding-left: 25px;
+    margin: 30px 0 15px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+    margin-bottom: 8px;
+
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 카드 사이를 균등하게 정렬 */
+    padding: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color:
+}
+
+
+
+.product-card {
+    flex: 0 0 calc(33.33% - 20px);
+    /* 3개 정렬, 간격 고려 */
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.cart {
+    float: right;
+    display: inline-block;
+    margin-left: 1px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.6;
+    font-family: '나눔고딕OTF';
+}
+
+
+
+.label {
+    display: inline-block;
+    color: #333;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: '나눔고딕OTF', sans-serif;
+
+}
+
+.label-yellow {
+    background-color: rgba(241, 191, 62, 0.3);
+    /* #F1BF3E + 투명도 30% */
+}
+
+
+.label-pink {
+    background-color: rgba(223, 180, 165, 0.3);
+    /* #DFB4A5의 투명 버전 */
+}
+
+.label-golden {
+    background-color: rgba(223, 172, 30, 0.3);
+    /* #DFAC1E의 투명 버전 */
+}
+
+.label-Blue {
+    background-color: rgba(157, 210, 197, 0.3);
+}
+
+.label-scarlet {
+    background-color: rgba(254, 145, 101, 0.3);
+}
+
+.label-green {
+    background-color: rgba(140, 178, 126, 0.3);
+}
+
+.label-dark {
+    background-color: rgba(47, 36, 32, 0.3);
+}
+
+.label-purple {
+    background-color: rgba(183, 170, 179, 0.3);
+}
+
+.label-een {
+    background-color: rgba(90, 85, 45, 0.3);
+}
+
+.label-ple {
+    background-color: rgba(75, 52, 110, 0.3);
+}
+
+.label-white {
+    background-color: rgba(208, 196, 172, 0.3);
+}
+
+.product-card p {
+    font-size: 16px;
+    margin: 8px 0 4px;
+    font-family: '나눔고딕OTF';
+
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}

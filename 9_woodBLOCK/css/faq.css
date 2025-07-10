@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+section {
+    min-width: 1024px;
+}
+h2 {
+    width: 1024px;
+    margin: 20px auto;
+    padding: 2px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+article {
+    width: 1024px;
+    margin: 0px auto;
+    position: relative;
+}
+.box {
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box img {
+    width: 450px;
+    
+}
+
+.faq {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 150px;
+    
+}
+
+article {
+    width: 1024px;
+    font-size: 16px;
+}
+
+#faq_line {
+    overflow: hidden;
+}
+
+#faq_line > article {
+    float: left;
+}
+
+#q2 {
+    width: 1024px;
+
+}
+
+article p {
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+article > p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+article > p:nth-child(even) {
+    border-top: 3px solid #000;
+    border-bottom: 2px solid #ddd;
+    line-height: 55px;
+    padding-left: 20px;
+}
+article > p:nth-child(odd){
+     line-height: 55px;
+    padding-left: 20px;
+}
+article > p:last-child {
+    padding-bottom: 50px;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+article li {
+    margin: 5px 80px;
+    font-size: 16px;
+}

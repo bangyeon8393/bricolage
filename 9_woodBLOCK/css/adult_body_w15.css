@@ -1,0 +1,358 @@
+/* 기본 스타일 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '나눔고딕OTF', sans-serif;
+}
+
+/* wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+/* 메인 content */
+.content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* ← 이 줄 추가 */
+}
+
+
+/* 이미지 그룹 */
+.image-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 50px;
+
+
+}
+
+.thumbnails img {
+    width: 63px;
+    height: 63px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    margin-left: 30px;
+}
+
+.main-image {
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+
+}
+
+/* ✅ 메인 이미지 + 설명 박스를 묶는 컨테이너 */
+.main-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✅ 이미지 설명 텍스트 박스 */
+.image-description-box {
+    margin-top: 12px;
+    padding: 6px 12px;
+    background-color:rgba(183, 170, 179, 0.3);
+    border-radius: 66px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+
+/* 상품 정보 */
+.info {
+    flex: 1 1 300px;
+    margin-left: 10px;
+}
+
+.info h2 {
+    font-size: 21px;
+    margin: 0 0 8px 25px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 14px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+    margin: 20px 0 20px 20px;
+    margin-left: 25px;
+}
+
+
+.product-line {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin: 10px 25px 0 25px;
+    margin-right: 100px;
+}
+
+.line-top {
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-size: 12px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+    color: #666;
+}
+
+.line-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#unit-price {
+    color: #666;
+}
+
+
+
+/* 수량 박스 */
+.quantity-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    background-color: #f2f2f2;
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#quantity {
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+    margin-left: 25px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+.toggle-box {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.plus {
+    font-size: 18px;
+    margin-right: 100px;
+}
+
+.toggle-content {
+    display: none;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding-left: 20px;
+}
+
+.toggle-content.visible {
+    display: block;
+}
+
+/* 장바구니 버튼 */
+.cart-btn {
+    display: block;
+    width: 50%;
+    max-width: 150px;
+    padding: 8px 0;
+    font-size: 14px;
+    background-color: #ADE0F1;
+    color: white;
+    border: none;
+    border-radius: 66px;
+    margin: 10px 0 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.cart-btn:hover {
+    background-color: gray;
+}
+
+/* Pay / N Pay 버튼 */
+.pay-group {
+    display: flex;
+    /* 버튼을 가로 정렬 */
+    width: 50%;
+    /* 부모 너비의 절반 */
+    max-width: 150px;
+    /* 최대 너비 제한 */
+    margin-left: 25px;
+    /* 왼쪽 여백 */
+}
+
+.pay-group button {
+    flex: 1 1 48%;
+    padding: 8px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 66px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* 추가: 수평 정렬 + 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 가운데 정렬 */
+}
+
+.pay-btn svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.pay-group button:first-child {
+    margin-right: 10px;
+    /* 버튼 사이 여백 */
+}
+
+
+/* 카카오페이 버튼 */
+.pay-btn {
+    background-color: #FEE500;
+}
+
+.pay-btn:hover {
+    background-color: gray;
+}
+
+/* 네이버페이 버튼 */
+.npay-btn {
+    background-color: #41B65B;
+}
+
+.npay-btn:hover {
+    background-color: gray;
+}
+
+
+/* 하단 슬로건 */
+.slogan {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slogan-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.slogan-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.slogan p {
+    font-size: 14px;
+    font-family: '나눔고딕OTF';
+    font-weight: 400;
+}
+
+.line-with-text {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.line-with-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    z-index: 0;
+}
+
+.line-with-text span {
+    position: relative;
+    background: #fff;
+    padding: 0 20px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+}
+
+
+.detail {
+    text-align: center;
+}
+
+.detail img {
+    width: 800px;
+}
+

@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+section {
+    min-width: 1024px;
+    margin-bottom: 40px;
+}
+
+#wrap {
+    min-width: 1024px;
+    max-width: 1920px;
+}
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide > a {
+    position: relative;
+    display: block;
+    width: 1920px;
+    height: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide > a > img {
+    width: 100%;
+}
+/*
+.slide > ul {
+    width: calc(100% * 2); 
+}
+
+.slide > ul > li {
+    width: 100vw; 
+}
+*/
+
+.slide > ul {
+   
+    width: 200%;
+    position: relative;
+    left: 0;
+}
+
+.slide > ul > li {
+    width: 50%;
+    
+    float: left;
+}
+
+.slide > ul > li > img {
+    /*직계 상위요소에 맞춤*/
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: 640px;
+}
+
+.btn > li {
+    width: 20px;
+    height: 20px;
+    background-color: #ADE0F1;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn > li:last-child {
+    margin: 0;
+}
+
+li.check {
+    background-color: #fce969;
+}
+
+.circle-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 0;
+}
+
+.circle-item {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.circle-item img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /*  border: 2px solid #70462A;*/
+    transition: opacity 0.5s;
+}
+
+.circle-item:hover {
+    transform: scale(1.1);
+}
+
+.sub-banner {
+    display: flex;
+    gap: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.left-photo {
+    width: 383px;
+    height: 481px;
+}
+
+.left-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-photo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    gap: 20px;
+}
+
+.big {
+    width: 420px;
+    height: 232px;
+}
+
+.small {
+    width: 200px;
+    height: 232px;
+}
+
+.right-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*
+.video {
+    display: flex;
+    margin: 40px auto;
+}
+*/
+iframe {
+    margin: 50px 0 30px 0;
+}
+
+.earth-banner {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.banner {
+    max-width: 400px;
+    height: 400px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+.coupon {
+    position: relative;
+    text-align: center;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+.coupon img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: #fff;
+    }
+
+    50% {
+        background-color: #fce969;
+    }
+}
+
+.coupon .banner-button {
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    left: 53%;
+    top: 145px;
+    /* 이미지 내 버튼의 수직 위치 */
+    transform: translateX(-150px);
+    /* 이미지 내 수평 위치 조정 */
+    font-size: 17px;
+    line-height: 0.7;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 10px 55px;
+    text-decoration: none;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    animation: blink 1.2s infinite;
+}
+
+/* 호버 효과 */
+.coupon .banner-button:hover {
+    background-color: #fce969;
+    color: #000;
+    font-weight: bold;
+    box-shadow: none;
+    animation: none;
+    /* 애니메이션 중지 */
+}
+
+/******** 모달 **********/
+.modal {
+    /*  위치(fixed)와 크기 설정  */
+    position: fixed;
+    top: 120px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    /*  calc(calculate)는 계산식(전체높이 - top 제외) - 연산자의 앞/뒤는 반드시 띄어쓰기   */
+    /*  반투명 배경색 설정  */
+    background-color: rgba(0, 0, 0, 0.4);
+    /*  rgba(red,green,blue,opAcity)  */
+    z-index: 100;
+}
+
+.modal-content {
+    /*  크기 설정  */
+    min-width: 1024px;
+    /*  .modal의 중앙에 정렬  */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.close {
+    /*  .modal의 오른쪽 위  */
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.close span {
+    /*  흰색 가로 막대  */
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    top: 14px;
+    left: -5px;
+}
+
+/******* span 2개를 각각 다른 방향으로 회전 *******/
+.close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+/*   insta   */
+#insta {
+    text-align: center;
+    padding: 20px;
+}
+
+.insta-banner img {
+    width: 300px;
+    margin: 20px auto;
+}
+
+
+.insta-video {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    gap: 75px;
+}
+
+.insta-video a {
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.insta-video video {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+}

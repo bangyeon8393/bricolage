@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: #000;
+}
+
+#wrap {
+    min-width: 1024px;
+}
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+/**/
+section {
+    width: 1024px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h2 {
+    width: 1024px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+    width: 1024px;
+    height: 50px;
+    
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+}
+
+.text {
+    width: 974px;
+    height: 50px;
+    padding: 0 10px;
+    border: 2px solid #ADE0F1;
+    box-sizing: border-box;
+    opacity: 80%;
+    float: left;
+
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ADE0F1;
+    border: none;
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-sizing: border-box;
+}
+
+.bar {
+    width: 12px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    transform: rotate(45deg);
+}
+
+article {
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+article > img {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.product {
+    padding: 2px 0;
+    overflow: hidden;
+    /*높이 자동 계산*/
+    
+}
+
+.product > li {
+    width: 230px;
+    height: 270px;
+    border: 3px solid #ADE0F1;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    margin: 10px; 
+
+}
+
+.product > li > a {
+    display: block;
+    height: 100%;
+}
+
+.photo {
+    display: block;
+    height: 230px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.name {
+    font-size: 14px;
+    line-height: 25px;
+}
